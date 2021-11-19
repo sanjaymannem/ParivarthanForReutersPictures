@@ -8,8 +8,8 @@ import traceback
 import os
 # Create your views here.
 def any_view(request, value = ''):
-	translate = boto3.client(service_name='translate',aws_access_key_id='AKIATJRFY7MJJA7CBS77',
-         aws_secret_access_key= 'gXwDx5HcRM7v0bhIgyG/+rmyDolV25ktapTXdgW2', region_name='us-west-1', use_ssl=True)
+	translate = boto3.client(service_name='translate',aws_access_key_id='id herer',
+         aws_secret_access_key= 'key here', region_name='us-west-1', use_ssl=True)
 	
 	languages = {'Andhra pradesh':['te', 'Telugu'],'Arunachal Pradesh':['hi','Hindi'],'Assam':['hi','Hindi'],'Bihar':['hi','Hindi'],'Chhattisgarh':['hi','Hindi'],'Goa':['hi','Hindi'],'Gujarat':['gu','Gujarathi'],'Haryana':['hi','Hindi'],
 	'Himachal Pradesh':['hi','Hindi'],'Jharkhand':['hi','Hindi'],'Karnataka':['kn', 'kannada'],'Kerala':['ml', 'malayalm'],'Madhya Pradesh':['hi','Hindi'],
