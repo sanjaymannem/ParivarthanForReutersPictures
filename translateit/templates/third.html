@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thrid</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+$(window).load(function(){
+  $('#f1').flexslider({
+    animation: "slide",
+    rtl: true,
+    start: function(slider){
+      $('body').removeClass('loading');
+    }
+  });
+ $('#f2').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    pausePlay: true,
+    mousewheel: true,
+    rtl: true,
+    asNavFor:'.flexslider'
+  });
+});
+});
+</script>
+
+
+
+<style type="text/css">
+.flex-caption {
+  width: 96%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 18px;
+}
+li.css a {
+  border-radius: 0;
+}
+</style>
+
+
+
+
+</head>
+<body>
+<div class="flexslider" id="f1" style="direction:rtl">
+  <ul class="slides">
+    <li>
+      <img src="translateit/devote1.jfif"/>
+      <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+    </li>
+    <li>
+      <img src="translateit/devote2.jfif" />
+      <p class="flex-caption">Adventurer Lemon</p>
+    </li>
+    <li>
+      <img src="translateit/devote3.jfif" />
+      <p class="flex-caption">Adventurer Donut</p>
+    </li>
+  </ul>
+</div>
+<div class="flexslider carousel" id="f2" style="direction:rtl">
+  <ul class="slides">
+    <li>
+      <img src="translateit/devote1.jfif" />
+    </li>
+    <li>
+      <img src="translateit/devote2.jfif" />
+    </li>
+    <li>
+      <img src="translateit/devote3.jfif" />
+    </li>
+  </ul>
+</div>
+</body>
+</html>
